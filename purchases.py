@@ -16,10 +16,8 @@ for _ in range(purchases):
     customer = input("Customer: ")
     cost = float(input(f"Cost: "))   
 
-    # calculate the cost with sales tax
     cost_taxed = cost*(1 + sales_tax)
     
-    # update all customer total costs in the dictionary
     if customer in customer_all:
         customer_all[customer] += cost_taxed
     else:
